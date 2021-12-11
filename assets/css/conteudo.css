@@ -1,1 +1,312 @@
+/*======================================================================*/
+/*============ SEÇÃO CONTEÚDO / NOVA TRANSAÇÃO =========================*/
+/*======================================================================*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.matrix{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.conteudo{
+    display: flex;
+    width: 100%;
+    max-width: 1112px;
+    justify-content: space-around;
+}
+.new_transaction{
+    display: flex;
+    width: 40%;
+    max-height: 344px;
+    flex-direction: column;
+    border: #9c9c9c solid 1px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+     
+    margin: 30px 10px 0px 20px;
+}
+.novatra{
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.transtype{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.seletor_compra_venda{
+    width: 100%;
+    height: 32px;
+    border: #9c9c9c solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 7px;
+}
+option{
+    font-size: 14px;
+}
+.merc_name{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.merc_input{
+    width: 100%;
+    height: 32px;
+    border: #9c9c9c solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    padding-left: 7px; 
+}
+.price{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.price_input{
+    width: 100%;
+    height: 32px;
+    border: #9c9c9c solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 7px;
+}
+.btn_adtransaction{
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(51, 51, 51, 1);
+}
+/* FIM CAIXA NOVA TRANSAÇÃO*/
+
+/*CAIXA EXTRATO TRANSAÇÃO*/
+.tab_transaction{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-height: 281px;
+    padding: 19px 20px 0px 10px;
+    margin-top: 30px;
+}
+.extract{
+    display: flex;
+    justify-content: center;
+}
+
+table #merchandise{
+    width: 100%;
+}
+th, td{
+    border-bottom: 1px solid black;
+    padding: 7px;
+    text-align: left;
+}
+ 
+/*=======================================================================*/
+/*============================RODAPÉ=====================================*/
+/*=======================================================================*/
+.rodape{
+    display: flexbox;
+    width: 100%;
+     
+    height: 8px;
+    margin-top: 546px;
+    border: solid rgba(51, 51, 51, 1) 1px;
+    background-color: rgba(51, 51, 51, 1)
+}
+/*=======================================================================*/
+/*=================== MÉDIA SCREEN 1112 PX ==============================*/
+/*=======================================================================*/
+
+
+@media screen and (max-width:1112px) {
+    .rodape{
+        margin-top: 360px;
+    }
+}
+
+/*=======================================================================*/
+/*=================== MÉDIA SCREEN 768 PX ===============================*/
+/*=======================================================================*/
+@media screen and (max-width:768px) {
+    .titulo{
+        justify-content: center;
+        margin-left: 200px;
+    }
+    .tamanho_titulo{
+        min-width: 411px;
+    }
+    .menu{
+        max-width: 252px;
+        margin: 0px;
+        align-items: flex-start;
+        color: rgba(224, 224, 224, 1)        
+    }
+
+    .nav_top{
+        top: 0px;
+        background-color: rgba(51, 51, 51,1);
+        width: 252px;
+        height: 874px;
+        right: 0px;
+        position: absolute;
+        transition: all .5s;
+    }
+    .Xis{
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .cross{
+        width: 16px;
+    }
+    .lista_menu{
+        top: 100px;
+        position: absolute;
+        width: 100%;
+        flex-direction: column; 
+    }
+
+    #check[type="checkbox"]:checked ~ nav{
+        transform: translateX(252px);
+    }
+
+    .separador{
+        display: none;
+    }
+
+    li{ 
+        text-align: right;
+    }
+
+    a:hover{
+        background-color:rgba(196, 196, 196, 1);
+        color:black;
+    }
+
+    a{  
+        width: 242px;            
+        text-decoration: none;
+        color: black;
+        padding: 20px 5px;
+        color: white;        
+    }
+    
+    .triplo_atomico img{
+        width: 24px;
+    }
+
+    .triplo_atomico{
+        display: block;
+        padding: 15px;
+        right: 0px;
+        position: absolute;
+       
+    }
+    
+    .rodape{
+        margin-top: 427px;
+    }
+}
+/*=======================================================================*/
+/*=================== MÉDIA SCREEN 411 PX ===============================*/
+/*=======================================================================*/
+@media screen and (max-width:411px) {  
+    .titulo{
+        width: 411px;
+        margin-left: 45px;
+        justify-content: center;   
+    }
+     
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_top{
+        top: 0px;
+        background-color: rgba(51, 51, 51,1);
+        width: 351px;
+        height: 790px;
+        right: 0px;
+        position: absolute;
+        transition: all .5s;
+    }
+    .lista_menu{
+        top: 100px;
+        position: absolute;
+        width: 100%;
+        flex-direction: column; 
+        align-items: flex-end;       
+    }
+     
+    #check[type="checkbox"]:checked ~ nav
+    {
+        transform: translateX(351px);
+    }
+    .separador{
+        display: none;
+    }
+    a:hover{
+        background-color:rgba(196, 196, 196, 1);
+        color:black;
+    }
+    a{    
+        width: 341px;
+        text-decoration: none;
+        color: black;
+        padding: 20px 5px;
+        color: white;    
+    }
+    
+    .triplo_atomico img{
+        width: 24px;
+    }
+    .triplo_atomico{
+        display: block;
+        padding: 15px;
+        right: 0px;
+        position: absolute;
+         
+    }
+    
+    .new_transaction{
+        width: 371px;
+        height: 371px;
+        margin:10px;
+        padding: 20px 0px 0px 0px;
+        border: 0px;
+        border-bottom: #9c9c9c solid 1px;
+    }
+    .tab_transaction{
+        width: 371px;
+        height: 281px;
+        padding: 0px;
+        margin: 20px;
+    }
+    .merc_input{
+        max-width: 371px;
+        padding-left: 7px;
+    }
+    .price_input{
+        max-width: 371px;
+        padding-left: 7px;
+    }
+    .rodape{
+        margin-top: 5px;
+    }
+}
 
