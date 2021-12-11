@@ -1,1 +1,100 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    font-family: 'Lato', sans-serif; /*define a fonte que será usada em todo o site*/
+}
+/*======================================================================*/
+/*======== INCÍCIO DA SEÇÃO DO CABEÇALHO E SEUS COMPONENTES ============*/
+/*======================================================================*/
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(224, 224, 224, 1);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    max-width: 1112px;/*largura máxima do cabecalho*/
+    max-height: 80px;   
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.logo{ /*caixa que envolve a logomarca*/
+    display: flex;
+    margin-left: 22px;
+}
+
+img{
+    width: 40px;
+}
+.titulo{
+    display: flex; 
+    align-items: center;   
+    width: 100%;  
+}
+
+.tamanho_titulo{
+    font-size: 20px;
+    /*min-width: 411px;*/
+    margin-left: 20px;
+}
+
+.nav_top{
+    background-color: white;
+}
+.menu{
+    min-width: 350px;
+    max-height: 40px;
+    align-items: center;
+   /* margin-right: 20px;*/
+}
+
+ul, li{
+    display: flex;
+    flex-direction: row;
+       
+    align-items: center;
+}
+ 
+ul{
+    display: flex;
+    justify-content: space-around;/*espaçamento entre os links do menu*/
+    height: 2.5em;  
+}
+
+.lista_menu li{
+    font-size: 16px;
+    /*width: 350px;*/
+    
+}
+a{
+    text-decoration: none; /*remove linha embaixo do link e a cor padrão*/
+    color: #000; /*define a cor para o*/
+}
+.separador{/*linha vertical que faz a separação entre os links do menu_top*/
+    color: #979797;
+    padding: 4px 20px;
+}
+.menu_lateral{
+    display: none;
+}
+.triplo_atomico{
+    display: none; /*oculta menu lateral*/ 
+}
+.Xis{
+    display: none; /*oculta o "X" do menu lateral*/
+}
+#check{
+    display:none;/*oculta a checkbox*/
+}
+/*======================================================================*/
+/*==== FIM DA SEÇÃO DO CABEÇALHO E SEUS COMPONENTES ((DESKTOPP)) =======*/
+/*======================================================================*/
+ 
