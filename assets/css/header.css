@@ -4,7 +4,7 @@
     padding: 0px;
 }
 body{
-    width: 100%;
+     
     font-family: 'Lato', sans-serif; /*define a fonte que será usada em todo o site*/
 }
 /*======================================================================*/
@@ -42,18 +42,19 @@ img{
 
 .tamanho_titulo{
     font-size: 20px;
-    /*min-width: 411px;*/
+     width: 411px;
     margin-left: 20px;
 }
 
 .nav_top{
+
     background-color: white;
+    white-space: nowrap; /*texto sem quebra de linha*/
+    padding: 0px 20px;/*espaçamento interno da caixa menu*/
 }
 .menu{
-    min-width: 350px;
     max-height: 40px;
     align-items: center;
-   /* margin-right: 20px;*/
 }
 
 ul, li{
@@ -65,13 +66,11 @@ ul, li{
  
 ul{
     display: flex;
-    justify-content: space-around;/*espaçamento entre os links do menu*/
     height: 2.5em;  
 }
 
 .lista_menu li{
     font-size: 16px;
-    /*width: 350px;*/
     
 }
 a{
@@ -91,9 +90,10 @@ a{
 .Xis{
     display: none; /*oculta o "X" do menu lateral*/
 }
-#check{
+ #check{
     display:none;/*oculta a checkbox*/
 }
+
 /*======================================================================*/
 /*==== FIM DA SEÇÃO DO CABEÇALHO E SEUS COMPONENTES ((DESKTOPP)) =======*/
 /*======================================================================*/
