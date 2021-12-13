@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/conteudo.css">
+     
+    <title>Controle financeiro</title>
+</head>
+<body>
+    <div class="container" ><!--caixa que envolve o cabecalho-->  
+        <header><!--inicio cabecalho-->
+            <div class="logo" >
+                <img class="img" src="./assets/img/Ellipse 13.png" alt="logomarca">
+            </div>
+            <div class="titulo" >
+                <h1 class="tamanho_titulo" >Controle financeiro</h1>
+            </div>
+            <div class="menu" >
+                <input type="checkbox"  id="check">
+                <label class="triplo_atomico" for="check">
+                    <img  src="./assets/img/menu.png" alt="menu">
+                </label>
+                <nav class="nav_top">
+                     
+                    <label class="Xis" >
+                        <img class="cross" src="./assets/img/cross2.png" alt="cruz">
+                    </label>
+                    <ul class="lista_menu">
+                        <li>
+                            <a href="#">Cadastro de transações</a>
+                        </li>
+                        <div class="separador">|</div>
+                        <li>
+                            <a href="#">Limpar dados</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>           
+        </header>
+    </div>
+<!--final do cabeçalho-->
+<!--inicio conteúdo-->
+<div class="matrix">
+
+    <div class="conteudo" >
+        <div class="new_transaction">
+            <div class="container_novatra" >
+                <h3 class="novatra" >Nova transação</h3>
+            </div>
+            <div class="container_tipo_transacao" >
+                <label class="transtype" for="transaction_type">Tipo de transação</label>
+                <select class="seletor_compra_venda" name="tipo_transacao" id="transaction_type">
+                    <option value="compra">Compra</option>
+                    <option value="venda">Venda</option>
+                </select>
+            </div>
+            <div class="container_nome_mercadoria" >
+                <label class="merc_name" for="mercadoria">Nome da mercadoria</label>
+                <input class="merc_input" type="text" id="mercadoria" placeholder="Input">
+            </div>
+            <div class="container_valor" >
+                <label class="price" for="Vlr">Valor</label>
+                <input class="price_input" type="text" name="Vlr" id="Vlr" placeholder="R$ 0,00">
+            </div>
+            <div class="container_btn" >
+                <input class="btn_adtransaction" type="button" value="Adicionar Transação">
+            </div>
+        </div>
+        <!--fim da caixa nova transação-->
+        <div class="tab_transaction" >
+            <h3 class="extract" >Extrato transações</h3>
+            <table id="merchandise">
+                <tr>
+                    <th> </th>
+                    <th style="text-align: left;font-weight: bold;">Mercadoria</th>
+                    <th style="text-align:end;font-weight: bold;">Valor</th>
+                </tr>
+                <tr>
+                    <td style="width: 1%; text-align:center; "> + </td>
+                    <td style="width: 70% ; text-align:left;"> Lorem ipsum dolor sit amet </td>
+                    <td style="width: 29% ; text-align: right;">  R$ 12.999,99 </td>
+                </tr>
+                <tr>
+                    <td style="width: 1%; text-align:center; ">-</td>
+                    <td style="width: 70% ; text-align: left;"> Quis nostru exercitation </td>
+                    <td style="width: 29% ; text-align: right;">R$ 99,99</td>
+                </tr>
+                <tr>
+                    <td style="width: 1%; text-align:center;border-bottom: double;"> + </td>
+                    <td style="width: 70% ; text-align:left;border-bottom: double;"> Lorem ipsum</td>
+                    <td style="width: 29% ; text-align:right; border-bottom: double;">R$ 9,99</td>
+                </tr>
+                <tr >
+                    <th style="border: none;"> </th>
+                    <th style="text-align: left; border: none;" >Total </th>
+                    <th style="text-align: right; border: none;" >R$ 12.909,99</th>
+                </tr>
+                <tr>
+                    <th style="border: none;"> </th>
+                    <th style="border: none;"> </th>
+                    <th class="th_lucro" style="text-align: right; border: none; padding: 0px;" >[LUCRO]</th>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+</div>
+<!--RODAPÉ-->
+<footer class="rodape" >
+
+</footer>
+    
+</body>
+</html>
