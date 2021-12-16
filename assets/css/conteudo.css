@@ -16,7 +16,7 @@
     max-width: 1112px;
     justify-content: space-around;
 }
-.new_transaction{
+.nova_transacao{
     display: flex;
     width: 40%;
     max-height: 344px;
@@ -28,7 +28,7 @@
      
     margin: 30px 10px 546px 20px;
 }
-.container_novatra{
+.caixa_nova_transacao{
     align-self: center;
 }
 .novatra{
@@ -39,10 +39,10 @@
     font-weight: bold;
     font-size: 18px;
 }
-.container_tipo_transacao{
+.caixa_tipo_transacao{
     width: 94.8%;
 }
-.transtype{
+.label_tipotransacao{
     display: flex;
     font-size: 14px;
     margin-bottom: 3px;
@@ -59,17 +59,17 @@
 option{
     font-size: 14px;
 }
-.container_nome_mercadoria{
+.caixa_nome_mercadoria{
     width: 92.5%;
 }
-.merc_name{
+.merc_nome{
     display: flex;
     justify-content: flex-start;
     width: 100%;
     font-size: 14px;
     margin-bottom: 3px;
 }
-.merc_input{
+.merc_insere{
     width: 100%;
     height: 32px;
     border: #9c9c9c solid 1px;
@@ -77,17 +77,17 @@ option{
     margin-bottom: 20px; 
     padding-left: 7px; 
 }
-.container_valor{
+.caixa_valor{
     width: 92.5%;
 }
-.price{
+.preco{
     display: flex;
     justify-content: flex-start;
     width: 100%;
     font-size: 14px;
     margin-bottom: 3px;
 }
-.price_input{
+.insere_preco{
     width: 100%;
     height: 32px;
     border: #9c9c9c solid 1px;
@@ -95,11 +95,11 @@ option{
     margin-bottom: 20px;
     padding-left: 7px;
 }
-.container_btn{
+.caixa_btn{
     margin-left: 10px;
     width: 94.8%;
 }
-.btn_adtransaction{
+.btn_adc_transacao{
     width: 100%;
     height: 32px;
     border-radius: 5px;
@@ -109,21 +109,22 @@ option{
 /* FIM CAIXA NOVA TRANSAÇÃO*/
 
 /*CAIXA EXTRATO TRANSAÇÃO*/
-.tab_transaction{
+.tab_transacao{
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 19px 10px 0px 10px;
     margin-top: 30px;
 }
-.extract{
+.extrato{
     display: flex;
     justify-content: center;
 }
 
-table #merchandise{
+table #tab_mercadoria{
     width: 100%;
 }
+
 th, td{
     border-bottom: 1px solid black;
     padding: 7px;
@@ -154,11 +155,11 @@ th, td{
         width: 96%;
     }
      
-    .new_transaction{
+    .nova_transacao{
         width: 36%;
         margin-bottom: 360px;
     }
-    .tab_transaction{
+    .tab_transacao{
         width: 59%;
         padding-right: 0px;
     }
@@ -173,7 +174,8 @@ th, td{
 @media screen and (max-width:768px) {
     .titulo{
         justify-content: center;
-        margin-left: 27.5%;
+        /* margin-left: 27.5%; */
+        text-align: center;
     }
     .conteudo{
         flex-direction: column;
@@ -187,7 +189,11 @@ th, td{
         color: rgba(224, 224, 224, 1)        
     }
 
-    .nav_top{
+    #check{
+        text-align-last: end;
+    }
+
+    .nav_principal{
         top: 0px;
         background-color: rgba(51, 51, 51,1);
         width: 252px;
@@ -197,18 +203,21 @@ th, td{
         position: fixed;
         transition: all .5s;
     }
-    .Xis{
+    
+    .xis{
         display: block;
         margin-top: 20px;
         margin-left: 20px;
-        position: absolute;
+        position: fixed;   
+        z-index: 1; /*botao X 1 nivel acima do botao triplo_atomico*/
     }
+   
     .cross{
         width: 16px;
     }
     .lista_menu{
         top: 100px;
-        position: absolute;
+        position: fixed;
         width: 100%;
         flex-direction: column; 
     }
@@ -217,12 +226,12 @@ th, td{
         transform: translateX(252px);
     }
     
-     
     .separador{
         display: none;
     }
 
     li{ 
+        width: 100%;
         text-align: right;
     }
 
@@ -247,33 +256,32 @@ th, td{
         display: block;
         padding: 15px;
         right: 0px;
-        position: absolute;
-        z-index: 1;
-       
+        position: fixed;
+        z-index: 0;   /*triplo_atomico fica oculto pela nav_principal*/
     }
-    .container_novatra{
+    .caixa_nova_transacao{
         flex: 0 1 100%;
         text-align: -webkit-center;
     }
-    .container_tipo_transacao{
+    .caixa_tipo_transacao{
         width: 19.5%;
     }
-    .container_nome_mercadoria{
+    .caixa_nome_mercadoria{
         width: 45.3%;
     }
-    .container_valor{
+    .caixa_valor{
         width: 19.5%;
     }
-    .container_btn{
+    .caixa_btn{
         text-align: end;
     }
-    .btn_adtransaction{
+    .btn_adc_transacao{
         text-align: end;
         width: 26%;
         margin-bottom: 20px;
         text-align: center;
     }
-    .new_transaction{
+    .nova_transacao{
         flex-flow: row wrap;
         width: 100%;
         height: 36.7%;
@@ -282,7 +290,7 @@ th, td{
         padding: 20px 0px 0px 0px;
         border-bottom: #9c9c9c solid 1px;
     }
-    .tab_transaction{
+    .tab_transacao{
         width: 100%;
         padding-right: 0px;
     }
@@ -307,7 +315,7 @@ th, td{
         display: flex;
         flex-direction: column;
     }
-    .nav_top{
+    .nav_principal{
         top: 0px;
         background-color: rgba(51, 51, 51,1);
         width: 351px;
@@ -318,7 +326,7 @@ th, td{
     }
     .lista_menu{
         top: 100px;
-        position: absolute;
+        position: fixed;
         width: 100%;
         flex-direction: column; 
         align-items: flex-end;       
@@ -350,13 +358,14 @@ th, td{
         display: block;
         padding: 15px;
         right: 0px;
-        position: absolute;
+        position: fixed;
+        z-index: 0;
          
     }
     .seletor_compra_venda{
         margin-bottom: 0px;
     }
-     .new_transaction{
+     .nova_transacao{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -366,33 +375,33 @@ th, td{
         border: 0px;
         border-bottom: #9c9c9c solid 1px;
     } 
-    .container_tipo_transacao{
+    .caixa_tipo_transacao{
         width: 100%;
     }
-    .container_nome_mercadoria{
+    .caixa_nome_mercadoria{
         width: 100%;
     }
-    .container_valor{
+    .caixa_valor{
         width: 100%;
     }
-    .btn_adtransaction{
+    .btn_adc_transacao{
         width: 100%;
     }
-    .container_novatra{
+    .caixa_nova_transacao{
         display: none;
     }
-    .tab_transaction{
+    .tab_transacao{
         width: 371px;
         height: 281px;
         padding: 0px;
         margin: 20px;
     }
-    .merc_input{
+    .merc_insere{
         max-width: 371px;
         padding-left: 7px;
         margin-bottom: 0px;
     }
-    .price_input{
+    .insere_preco{
         max-width: 371px;
         padding-left: 7px;
         margin-bottom: 0px;
@@ -401,10 +410,13 @@ th, td{
         display: block;
         padding: 15px;
         right: 0px;
-        position: absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: 0;/*tripo_atomico fica oculto pela nav_principal*/
     }
-    .btn_adtransaction{
+    .xis{
+        z-index: 1;/* botao X 1 nivel acima do botao tripo_atomico*/
+    }
+    .btn_adc_transacao{
         margin-bottom: 0px;
     }
     .rodape{
